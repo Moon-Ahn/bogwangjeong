@@ -271,12 +271,22 @@ footer { background: var(--charcoal); padding: 3rem 5rem; border-top: 1px solid 
 }
 
 @media(max-width: 768px) {
-  /* 상단 네비게이션바 패딩 수정 */
-  nav { padding: 1.2rem 1.5rem; }
-  nav.scrolled { padding: 0.9rem 1.5rem; }
+  /* 1. 상단 네비게이션바 줄바꿈 방지 및 여백 최적화 */
+  nav {
+    padding: 1rem 1.2rem;
+  }
+  nav.scrolled {
+    padding: 0.8rem 1.2rem;
+  }
+  .nav-logo {
+    font-size: 1.1rem;
+    white-space: nowrap; /* 브랜드명이 모바일에서 절대 쪼개지지 않음 */
+  }
+  .nav-logo span {
+    font-size: 0.65rem;
+  }
 
-  /* 모바일 토글 메뉴 스위치 활성화 */
-  .mobile-toggle { display: block; }
+  /* 모바일 토글 메뉴 채우기 */
   .nav-links {
     position: fixed; top: 0; right: -100%; width: 75%; height: 100vh;
     background: var(--charcoal); flex-direction: column; justify-content: center;
@@ -284,48 +294,116 @@ footer { background: var(--charcoal); padding: 3rem 5rem; border-top: 1px solid 
     padding: 2rem; z-index: 305;
   }
   .nav-links.active { right: 0; }
-  .nav-links a { color: rgba(244, 239, 230, 0.7); font-size: 1.1rem; width: 100%; text-align: center; }
+  .nav-links a { color: rgba(244, 239, 230, 0.7); font-size: 1.05rem; width: 100%; text-index: center; }
   .nav-cta { background: var(--gold-light); color: var(--charcoal) !important; width: 100%; text-align: center; padding: 0.8rem 0; }
 
-  /* 전체 섹션 내부 여백 축소 */
-  nav, .why, .story-header, .founder, .stats-dark, .menu, .vision-left, .vision-right, .media, .franchise, .simulator, .contact, footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+  /* 2. 전체 섹션 모바일 패딩 조정 (글자가 벽에 붙지 않게 예쁜 여백 형성) */
+  .why, .story-header, .founder, .stats-dark, .menu, .vision-left, .vision-right, .media, .franchise, .simulator, .contact, footer {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 
-  /* 히어로 영역 모바일 텍스트 축소 */
-  .hero { padding: 0 1.5rem 5rem; }
-  .hero h1 { font-size: 1.9rem; line-height: 1.25; }
-  .hero-sub { font-size: 0.95rem; margin-bottom: 2rem; }
-  .hero-btns { flex-direction: column; width: 100%; gap: 0.8rem; }
-  .btn-p, .btn-g { width: 100%; text-align: center; padding: 0.9rem 0; }
-  .hero-video-placeholder { display: none; } /* 모바일에서는 오버플로우 방지를 위해 비디오 영역 숨김 */
+  /* 3. 모바일 타이틀 폰트 크기 및 단어 단위 줄바꿈 설정 */
+  .sec-h {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 2.5rem;
+    word-break: keep-all; /* 글자 중간이 아니라 단어 단위로만 예쁘게 줄바꿈 */
+  }
 
-  /* 격자 배열(그리드) 전체를 1열 세로 배열로 전환 */
+  /* 4. 히어로 영역 글자 크기 밸런싱 */
+  .hero { padding: 0 1.2rem 4rem; }
+  .hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    word-break: keep-all; /* "보광정입니다" 등의 단어가 툭 끊기지 않음 */
+  }
+  .hero-sub {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    word-break: keep-all;
+  }
+  .hero-btns { flex-direction: column; width: 100%; gap: 0.6rem; }
+  .btn-p, .btn-g {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 0;
+    font-size: 0.85rem;
+    white-space: nowrap; /* 버튼 안의 텍스트가 절대 두 줄로 넘어가지 않음 */
+  }
+  .hero-video-placeholder { display: none; }
+
+  /* 5. 그리드 레이아웃 1열 전개 및 가독성 확보 */
   .numbers { grid-template-columns: repeat(2, 1fr); }
-  .num-item { padding: 2.5rem 1rem; border-right: none; border-bottom: 1px solid rgba(244, 239, 230, 0.05); }
-  .num-item:nth-child(even) { border-left: 1px solid rgba(244, 239, 230, 0.05); }
+  .num-item { padding: 2rem 1rem; }
+  .num-val { font-size: 2.5rem; }
 
-  .why-grid, .story-steps, .founder-team, .stats-grid, .menu-grid, .media-grid, .process-grid { grid-template-columns: 1fr; }
+  .why-grid, .story-steps, .founder-team, .stats-grid, .menu-grid, .media-grid, .process-grid {
+    grid-template-columns: 1fr;
+    gap: 12px; /* 카드와 카드 사이의 답답하지 않은 간격 유지 */
+  }
 
-  /* 인물 소개 카드 간 격자선 복원 */
-  .founder-team { gap: 2px; }
-  .founder-card-img-wrapper { aspect-ratio: 4/5; } /* 모바일은 세로 비율로 시원하게 매칭 */
+  .why-card, .step-card, .founder-card, .stat-card, .menu-card, .media-card, .p-card {
+    padding: 2rem 1.5rem; /* 카드 내부 여백도 모바일에 맞게 정돈 */
+  }
 
-  /* 창업 상담 CTA 배너 박스 모바일 전용 세로 깨짐 교정 */
+  /* 인물 카드 모바일 종횡비 고정 */
+  .founder-card-img-wrapper { aspect-ratio: 1 / 1; }
+
+  /* 6. 창업 상담 신청 CTA 배너박스 모바일 칼교정 */
   .franchise-cta {
     flex-direction: column;
     text-align: center;
-    padding: 2.5rem 1.5rem;
-    gap: 1.5rem;
+    padding: 2rem 1.2rem;
+    gap: 1.2rem;
+    margin-top: 2rem;
   }
-  .fct-title { font-size: 1.25rem; text-align: center; margin-bottom: 0.5rem; }
-  .fct-sub { font-size: 0.82rem; text-align: center; }
-  .btn-gold { width: 100%; text-align: center; padding: 1rem 0; }
+  .fct-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    word-break: keep-all;
+  }
+  .fct-sub {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+  .btn-gold {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 0;
+    font-size: 0.85rem;
+    white-space: nowrap; /* "무료 창업 설명 신청하기 →" 문구 한 줄 고정 */
+  }
 
-  /* 입력 폼 가로 정렬 깨짐 복구 */
+  /* 7. 수익 계산기 및 폼 요소 터치 편의성 업그레이드 */
+  .sim-row {
+    padding: 1.2rem 1rem;
+    flex-direction: column; /* 평수 선택 시 결과 항목들이 모바일에서 겹치지 않게 분할 */
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .sim-row-label { font-size: 0.78rem; }
+  .sim-row-val { font-size: 1rem; }
+  .sim-row-val.highlight { font-size: 1.15rem; }
+  .sim-note { font-size: 0.7rem; line-height: 1.5; }
+
   .form-row2 { grid-template-columns: 1fr; }
-  .ff { padding: 1.1rem 1.3rem; }
+  .ff { padding: 1rem 1.2rem; }
+  .btn-submit { padding: 1rem 0; font-size: 0.85rem; }
 
-  /* 비전 및 스토리 결론부 수직 배치 */
-  .story-conclusion { flex-direction: column; text-align: center; padding: 3rem 1.5rem; gap: 2rem; }
-  .footer-inner { flex-direction: column; gap: 1.5rem; text-align: center; }
-  .ft-links { gap: 1.2rem; }
+  /* 8. 기타 결론부 및 푸터 정렬 */
+  .story-conclusion { flex-direction: column; text-align: center; padding: 2.5rem 1.2rem; gap: 1.5rem; }
+  .story-conclusion-text { font-size: 1.1rem; line-height: 1.5; word-break: keep-all; }
+  .scb-num { font-size: 3rem; }
+
+  footer { padding: 2.5rem 1.2rem; }
+  .footer-inner { flex-direction: column; gap: 1.2rem; text-align: center; }
+  .ft-links { gap: 1rem; justify-content: center; }
+  .ft-links a { font-size: 0.7rem; }
+  .ft-copy, .ft-biz { font-size: 0.65rem; line-height: 1.5; text-align: center; word-break: keep-all; }
 }
