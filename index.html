@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>보광정 — KOREA BBQ BRAND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="#top" class="nav-logo">보광정 <span>가맹본부</span></a>
+  <button class="mobile-toggle" aria-label="메뉴 열기" onclick="toggleMenu()">
+    <i class="ph ph-list" id="menu-icon"></i>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#why" onclick="closeMenu()">경쟁력</a>
+    <a href="#story" onclick="closeMenu()">스토리</a>
+    <a href="#founder" onclick="closeMenu()">팀</a>
+    <a href="#franchise" onclick="closeMenu()">가맹안내</a>
+    <a href="#contact" class="nav-cta" onclick="closeMenu()">창업 상담</a>
+  </div>
+</nav>
+
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <div class="hero-bg-visual"></div>
+    <div class="hero-smoke-emitter"></div>
+    <div class="hero-video-placeholder" onclick="playMockVideo()">
+      <i class="ph ph-play-circle"></i>
+      <div>브랜드 감성 영상 감상하기</div>
+      <div style="opacity:.6;font-size:.7rem;margin-top:.1rem;">3대 고집 · 참숯의 명가 · 수육런 현장 스케치</div>
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">KOREA BBQ BRAND · 가맹사업 · 브랜드 플랫폼</div>
+    <h1>3대에 걸친 고기 철학,<br>이태원에서 검증된 운영력.<br><em>보광정입니다.</em></h1>
+    <p class="hero-sub">한국의 고기 문화를 전하는 브랜드입니다.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-p">창업 상담 신청</a>
+      <a href="#why" class="btn-g">경쟁력 보기</a>
+    </div>
+  </div>
+</section>
+
+<div class="numbers" id="numbers">
+  <div class="num-item">
+    <div class="num-val" data-target="4.9" data-decimal="1" data-suffix="★">0★</div>
+    <div class="num-lbl">구글 평점</div>
+  </div>
+  <div class="num-item">
+    <div class="num-val" data-target="3100" data-suffix="+">0+</div>
+    <div class="num-lbl">구글 리뷰</div>
+  </div>
+  <div class="num-item">
+    <div class="num-val" data-target="40" data-suffix="%+">0%+</div>
+    <div class="num-lbl">글로벌 고객 비율</div>
+  </div>
+  <div class="num-item">
+    <div class="num-val" data-suffix="대">3</div>
+    <div class="num-lbl">3대 가문의 철학</div>
+  </div>
+</div>
+
+<section class="why" id="why">
+  <div class="sec-label">Why Bogwangjeong</div>
+  <h2 class="sec-h">왜 보광정인가</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-num">01</div>
+      <div class="why-title">이태원에서<br>검증된 경쟁력</div>
+      <div class="why-desc">외국인 관광 상권, 구글 4.9★ · 3,100개 리뷰.<br>가장 까다로운 시장이 먼저 증명했습니다.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">02</div>
+      <div class="why-title">상표권 등록 완료<br>브랜드 자산</div>
+      <div class="why-desc">보광정 상표권 기반의 확장 가능한 브랜드.<br>축적된 운영 노하우와 브랜드 자산을 함께 활용합니다.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">03</div>
+      <div class="why-title">누구나 운영할 수 있는<br>완성된 시스템</div>
+      <div class="why-desc">주방·홀·교육·위생 전 분야 매뉴얼.<br>외식 경험 없이도 본사 지원으로 오픈 가능합니다.</div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="story-header">
+    <div>
+      <div class="sec-label">Brand Story</div>
+      <h2 class="sec-h">3대에 걸쳐<br>쌓아온 경험</h2>
+    </div>
+    <p style="font-size:1rem;color:var(--warm-gray);line-height:1.9;align-self:end;">
+      보광정은 어느 날 갑자기 만들어진 브랜드가 아닙니다.<br>
+      수많은 시행착오와 3대에 걸친 현장 경험이<br>
+      지금의 경쟁력이 됐습니다.
+    </p>
+  </div>
+
+  <div class="story-steps">
+    <div class="step-card">
+      <div class="step-arrow">→</div>
+      <div class="step-num">01</div>
+      <div class="step-tag">1세대 · 경남 산청</div>
+      <div class="step-title">농장에서 시작된 고기 이해</div>
+      <div class="step-desc">지리산 산청 돼지농장. 좋은 고기는 좋은 기준에서 나온다는 철학이 이 시기에 뿌리를 내렸습니다.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-arrow">→</div>
+      <div class="step-num">02</div>
+      <div class="step-tag">2세대 · 대구 수성구</div>
+      <div class="step-title">고깃집 운영의 현장 경험</div>
+      <div class="step-desc">부모님의 고깃집. 맛을 내는 법, 단골을 만드는 법, 외식업의 본질을 몸으로 배웠습니다.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <div class="step-tag">3세대 · 전국</div>
+      <div class="step-title">수백 곳 탐방 · 메뉴 연구</div>
+      <div class="step-desc">전국 고깃집 직접 탐방, 궁중음식연구원 수료, 한식 다이닝 경험. 무엇이 통하는지 철저히 검증했습니다.</div>
+    </div>
+    <div class="step-card dark">
+      <div class="step-arrow" style="background:var(--gold);">→</div>
+      <div class="step-num">04</div>
+      <div class="step-tag">브랜드 설계</div>
+      <div class="step-title">고기 경험 전체를 설계</div>
+      <div class="step-desc">고기·소스·곁들임·마무리까지 하나의 경험으로. 3대의 시행착오가 메뉴 철학으로 완성됐습니다.</div>
+    </div>
+    <div class="step-card dark">
+      <div class="step-arrow" style="background:var(--gold);">→</div>
+      <div class="step-num">05</div>
+      <div class="step-tag">이태원 검증</div>
+      <div class="step-title">가장 까다로운 상권에서 증명</div>
+      <div class="step-desc">외국인 40%, 구글 4.9★ · 3,100개 리뷰. 이태원에서 살아남은 것 자체가 검증입니다.</div>
+    </div>
+    <div class="step-card dark">
+      <div class="step-num">06</div>
+      <div class="step-tag">현재</div>
+      <div class="step-title">경험이 시스템이 됐습니다</div>
+      <div class="step-desc">3대의 경험, 수백 번의 시행착오. 이제 그 모든 것이 가맹 파트너와 함께하는 브랜드 시스템입니다.</div>
+    </div>
+  </div>
+
+  <div class="story-conclusion">
+    <div class="story-conclusion-text">
+      3대의 경험과 수많은 시행착오가<br>
+      <em>운영 매뉴얼</em>이 되고 <em>브랜드 경쟁력</em>이 됐습니다.
+    </div>
+    <div class="story-conclusion-badge">
+      <div class="scb-num">3代</div>
+      <div class="scb-lbl">Accumulated Experience</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder" id="founder">
+  <div class="sec-label">Our Team</div>
+  <h2 class="sec-h">브랜드를 만드는 사람들</h2>
+  <div class="founder-team">
+
+    <!-- 이동훈 대표 -->
+    <div class="founder-card">
+      <div class="founder-card-img-wrapper">
+        <img src="images/lee_donghoon.webp" alt="이동훈" class="founder-card-img">
+      </div>
+      <div class="founder-card-info">
+        <div class="founder-card-name">이동훈</div>
+        <div class="founder-card-role">Founder · CEO</div>
+        <div class="founder-card-tags">
+          <div class="fc-tag">고기집 3대 가문</div>
+          <div class="fc-tag">ROTC 57기 장교 출신</div>
+          <div class="fc-tag">궁중음식연구원 수료</div>
+          <div class="fc-tag">이태원관광특구 이사</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 곽범조 이사 -->
+    <div class="founder-card">
+      <div class="founder-card-img-wrapper">
+        <img src="images/kwak_beomjo.webp" alt="곽범조" class="founder-card-img">
+      </div>
+      <div class="founder-card-info">
+        <div class="founder-card-name">곽범조</div>
+        <div class="founder-card-role">Operations</div>
+        <div class="founder-card-tags">
+          <div class="fc-tag">운영 프로세스 총괄</div>
+          <div class="fc-tag">매뉴얼 시스템 구축</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 박세현 이사 -->
+    <div class="founder-card">
+      <div class="founder-card-img-wrapper">
+        <img src="images/park_sehyun.webp" alt="박세현" class="founder-card-img">
+      </div>
+      <div class="founder-card-info">
+        <div class="founder-card-name">박세현</div>
+        <div class="founder-card-role">Brand Design</div>
+        <div class="founder-card-tags">
+          <div class="fc-tag">브랜드 아이덴티티 총괄</div>
+          <div class="fc-tag">공간·디자인 기획</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="stats-dark" id="stats">
+  <div class="sec-label">Performance</div>
+  <h2 class="sec-h">숫자로 보는<br>보광정</h2>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-val">10억+</div>
+      <div class="stat-lbl">연 매출 (직영점)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">30%</div>
+      <div class="stat-lbl">평균 순수익률</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">95%+</div>
+      <div class="stat-lbl">행사 만족도</div>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="sec-label">Korean BBQ Experience</div>
+  <h2 class="sec-h">고기를 가장 맛있게<br>먹는 경험</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-photo"><img src="images/menu-main.webp" alt="삼겹살 목살"></div>
+      <div class="menu-info">
+        <div class="menu-num">01</div>
+        <div class="menu-name">삼겹살 · 목살</div>
+        <div class="menu-desc">도드람한돈 브랜드육을 사용하여 고기를 가장 맛있게 먹을 수 있도록 설계된 보광정의 핵심 메뉴</div>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-photo"><img src="images/menu-sub.webp" alt="시그니처 소스"></div>
+      <div class="menu-info">
+        <div class="menu-num">02</div>
+        <div class="menu-name">시그니처 소스</div>
+        <div class="menu-desc">고기의 맛을 완성하는 보광정만의 소스. 천연 복분자 소금과 특제 고추장 등 특허 출원 중인 브랜드 자산입니다</div>
+        <div class="menu-highlight">Patent Pending</div>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-photo"><img src="images/leader1.webp" alt="백김치 곁들임"></div>
+      <div class="menu-info">
+        <div class="menu-num">03</div>
+        <div class="menu-name">백김치 · 곁들임</div>
+        <div class="menu-desc">외국인도 부담없이 깔끔하게 즐기는 보광정만의 마리아주 페어링 찬류</div>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-photo"><img src="images/leader2.webp" alt="비빔칼국수"></div>
+      <div class="menu-info">
+        <div class="menu-num">04</div>
+        <div class="menu-name">순창 조달순 할머니<br>비빔칼국수</div>
+        <div class="menu-desc">오랜 시간 이어진 비법 양념장. K-BBQ 마무리 식사를 완벽하게 보완하기 위해 연구된 대표 시그니처</div>
+        <div class="menu-highlight">Signature Menu</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vision">
+  <div class="vision">
+    <div class="vision-left">
+      <div class="sec-label">Brand Vision</div>
+      <h2 class="sec-h">누구나 함께하는<br>브랜드가<br>아닙니다.</h2>
+      <p class="vision-sub">같은 방향을 바라보는 사람과<br>오랫동안 함께 성장합니다.</p>
+    </div>
+    <div class="vision-right">
+      <div class="v-steps">
+        <div class="v-step active">
+          <div class="v-num">01</div>
+          <div>
+            <div class="v-stage">현재</div>
+            <div class="v-title">직영 매장 충분히 검증 <span class="v-badge">진행 중</span></div>
+            <div class="v-desc">이태원 직영점에서 운영 시스템과 수익구조를 철저히 검증합니다.</div>
+          </div>
+        </div>
+        <div class="v-step">
+          <div class="v-num">02</div>
+          <div>
+            <div class="v-stage">단기</div>
+            <div class="v-title">브랜드 철학에 공감하는 파트너 선별</div>
+            <div class="v-desc">가맹점 수 확대가 목적이 아닙니다. 함께 가치를 키워갈 수 있는 사람을 찾습니다.</div>
+          </div>
+        </div>
+        <div class="v-step">
+          <div class="v-num">03</div>
+          <div>
+            <div class="v-stage">중기</div>
+            <div class="v-title">준비된 파트너와 함께 성장</div>
+            <div class="v-desc">검증된 시스템과 강력한 IP 자산을 기반으로 전국 주요 상권으로 오랫동안 지속 성장합니다.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="media" id="media">
+  <div class="sec-label">Media</div>
+  <h2 class="sec-h">미디어가 주목하는<br>보광정</h2>
+  <div class="media-grid">
+    <div class="media-card">
+      <div class="media-thumb"><div class="m-ico">📺</div><div>OTT</div></div>
+      <div class="media-info">
+        <div class="media-type">OTT 콘텐츠</div>
+        <div class="media-title">넷플릭스 오리지널<br>이태원 씬 촬영지 출연</div>
+      </div>
+    </div>
+    <div class="media-card">
+      <div class="media-thumb"><div class="m-ico">📺</div><div>방송</div></div>
+      <div class="media-info">
+        <div class="media-type">tvN 예능 프로그램</div>
+        <div class="media-title">'밥이나 한잔해'<br>보광정 방문 에피소드 방영</div>
+      </div>
+    </div>
+    <a href="https://youtu.be/O_AfnrUhQDw?si=bDbujya_KdH5AbTJ" target="_blank" style="text-decoration:none;">
+      <div class="media-card">
+        <div class="media-thumb" style="cursor:pointer;"><div class="m-ico">▶</div><div>YouTube</div></div>
+        <div class="media-info">
+          <div class="media-type">YouTube</div>
+          <div class="media-title">30대 자영업자 이야기<br>대표 인터뷰 다큐멘터리</div>
+        </div>
+      </div>
+    </a>
+    <a href="https://youtu.be/24G3PMx12q0?si=BsgB7vkCb7Nm0dWw" target="_blank" style="text-decoration:none;">
+      <div class="media-card">
+        <div class="media-thumb" style="cursor:pointer;"><div class="m-ico">▶</div><div>YouTube</div></div>
+        <div class="media-info">
+          <div class="media-type">YouTube</div>
+          <div class="media-title">무배당 채널<br>보광정 촬영 콘텐츠</div>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="franchise" id="franchise">
+  <div class="sec-label">Franchise</div>
+  <h2 class="sec-h">창업 파트너를<br>모집합니다</h2>
+  <div class="process-grid">
+    <div class="p-card">
+      <div class="p-num">01</div>
+      <div class="p-title">상담 신청</div>
+      <div class="p-desc">폼 서브밋 또는 하단 카카오 공식 채널을 통한 손쉬운 신청</div>
+    </div>
+    <div class="p-card">
+      <div class="p-num">02</div>
+      <div class="p-title">brand 설명회</div>
+      <div class="p-desc">운영 아카데미 시스템 · 정밀 실수익 구조 안내 브리핑</div>
+    </div>
+    <div class="p-card">
+      <div class="p-num">03</div>
+      <div class="p-title">입지 분석</div>
+      <div class="p-desc">지리정보시스템 결합 본사 무료 상권 및 후보지 분석 제공</div>
+    </div>
+    <div class="p-card">
+      <div class="p-num">04</div>
+      <div class="p-title">계약 · 오픈</div>
+      <div class="p-desc">공간 맞춤 브랜딩 시공 · 도제식 교육 · 오픈 올인원 케어</div>
+    </div>
+  </div>
+  <div class="franchise-cta">
+    <div>
+      <div class="fct-title">지금 가맹 상담을 신청하세요</div>
+      <div class="fct-sub">최신 가맹운영 가이드 및 수익성 분석 리포트 PDF 무료 제공</div>
+    </div>
+    <a href="#contact" class="btn-gold">무료 창업 설명 신청하기 →</a>
+  </div>
+</section>
+
+<section class="simulator" id="simulator">
+  <div class="sec-label">Revenue Simulator</div>
+  <h2 class="sec-h">예상 수익<br>계산해보기</h2>
+  <div class="sim-layout">
+    <div>
+      <div class="sim-ctrl-label">희망 매장 규모 (평형)</div>
+      <input type="range" class="sim-range" id="sim-size" min="20" max="60" step="5" value="30" oninput="calculateROI()">
+      <div class="sim-range-val"><span id="range-val">30</span>평형 표준 매장</div>
+    </div>
+    <div>
+      <div class="sim-results">
+        <div class="sim-row">
+          <span class="sim-row-label">예상 개설 가맹비 &amp; 인테리어 투자비</span>
+          <span class="sim-row-val" id="res-invest">약 1억 1,500만 원</span>
+        </div>
+        <div class="sim-row">
+          <span class="sim-row-label">월 예상 평균 매출</span>
+          <span class="sim-row-val" id="res-sales">6,600만 ~ 8,400만 원</span>
+        </div>
+        <div class="sim-row">
+          <span class="sim-row-label">원가 · 고정 인건비 비율</span>
+          <span class="sim-row-val">약 65~70%</span>
+        </div>
+        <div class="sim-row">
+          <span class="sim-row-label">예상 월 순수익</span>
+          <span class="sim-row-val highlight" id="res-net">1,848만 ~ 2,520만 원 (순수익률 28~30%)</span>
+        </div>
+      </div>
+      <p class="sim-note">* 이태원 직영점 3개월 평균 데이터 기반 참고용 모의 계산 수치이며, 확정 수익을 보장하지 않습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="sec-label">Contact</div>
+  <h2 class="sec-h">문의하기</h2>
+  <div class="contact-layout">
+    <div>
+      <form id="franchiseForm" action="https://formspree.io/f/xykawkzv" method="POST">
+        <div class="form-stack">
+          <div class="form-row2">
+            <div class="ff">
+              <div class="ff-lbl">이름 / 담당자명 *</div>
+              <input class="ff-inp" type="text" name="이름 / 담당자명" id="form-name" placeholder="홍길동" required>
+            </div>
+            <div class="ff">
+              <div class="ff-lbl">휴대폰 연락처 *</div>
+              <input class="ff-inp" type="tel" name="휴대폰 연락처" id="form-tel" placeholder="010-0000-0000" required>
+            </div>
+          </div>
+          <div class="form-row2">
+            <div class="ff">
+              <div class="ff-lbl">희망 창업 예정 지역 *</div>
+              <input class="ff-inp" type="text" name="희망 창업 예정 지역" id="form-area" placeholder="서울 강남구" required>
+            </div>
+            <div class="ff">
+              <div class="ff-lbl">예상 예산 규모 *</div>
+              <input class="ff-inp" type="text" name="예상 예산 규모" id="form-budget" placeholder="1억 ~ 2억" required>
+            </div>
+          </div>
+          <div class="ff full">
+            <div class="ff-lbl">문의 유형 *</div>
+            <input class="ff-inp" type="text" name="문의 카테고리" id="form-type" placeholder="가맹 창업 / 투자 / 제휴 협업 중 입력" required>
+          </div>
+          <div class="ff full">
+            <div class="ff-lbl">문의 내용</div>
+            <input class="ff-inp" type="text" name="추가 상세 전달 사항" id="form-msg" placeholder="궁금한 점 및 점포 유무를 자유롭게 적어주세요">
+          </div>
+        </div>
+        <button type="submit" class="btn-submit">문의 보내기</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <div><div class="ci-lbl">이메일</div><div class="ci-val">bogwangjung77@gmail.com</div></div>
+      <div><div class="ci-lbl">주소</div><div class="ci-val">서울특별시 용산구 보광로 118 1층 보광정</div></div>
+      <div><div class="ci-lbl">인스타그램</div><div class="ci-val"><a href="https://instagram.com/bogwangjung_official" target="_blank">@bogwangjung_official</a></div></div>
+      <div>
+        <div class="ci-lbl">카카오톡 채널</div>
+        <a href="https://pf.kakao.com/_PfRxeG" target="_blank" class="kakao-btn"><i class="ph ph-chats-teardrop"></i> 카카오톡으로 문의하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="ft-logo">보광정</div>
+    <div class="ft-links">
+      <a href="#top">이용약관</a>
+      <a href="#top">개인정보처리방침</a>
+      <a href="#contact">오시는 길</a>
+    </div>
+  </div>
+  <div class="ft-copy">© 2026 엘씨보광. All rights reserved.</div>
+  <div class="ft-biz">대표자: 곽현진 · 사업자등록번호: 390-87-03497 · 서울특별시 용산구 보광로 118 1층</div>
+</footer>
+
+<div class="modal-overlay" id="successModal">
+  <div class="modal-card">
+    <div class="modal-icon"><i class="ph ph-check-circle"></i></div>
+    <h3>상담 신청 완료</h3>
+    <p>
+      보광정 가맹본부 창업 희망 상담서가 성공적으로 접수되었습니다.<br>
+      기입해 주신 연락처로 <strong>24시간 이내</strong> 개설 전문 디렉터가<br>
+      직접 상세 상담 조율 전화를 드리겠습니다.
+    </p>
+    <button class="btn-modal-close" onclick="closeSuccessModal()">확인</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="videoModal">
+  <div class="modal-card" style="max-width:600px;">
+    <div class="modal-icon" style="background:rgba(212,170,76,0.1); color:var(--gold-light);"><i class="ph ph-video-camera"></i></div>
+    <h3>보광정 브랜드 무드 필름</h3>
+    <div style="background:#18160F; height:260px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--cream); margin-bottom:1.5rem; border-radius:4px; border:1px solid rgba(244,239,230,0.1);">
+      <i class="ph ph-circles-three-plus" style="font-size:3rem; color:var(--gold-light); margin-bottom:0.8rem;"></i>
+      <p style="color:var(--cream); font-size:0.95rem; font-weight:500;">동영상 재생을 시뮬레이션 중입니다</p>
+      <p style="color:rgba(244,239,230,0.4); font-size:0.75rem;">숯불 생육 구이 연출, 수육런 역동적 스틸컷 무드</p>
+    </div>
+    <button class="btn-modal-close" onclick="closeVideoModal()">무드 필름 닫기</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
