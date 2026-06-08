@@ -6,11 +6,31 @@
 <title>보광정 — KOREA BBQ BRAND</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- ──────────────────────────────────────────────────
+   [SEO] 검색엔진 최적화 및 링크 공유 오픈그래프(OG) 메타 태그
+   ────────────────────────────────────────────────── */ -->
+<meta name="description" content="3대에 걸친 고기 철학, 이태원에서 검증된 프리미엄 KOREA BBQ BRAND 보광정">
+<meta name="keywords" content="보광정, 보광정창업, 고기집창업, 삼겹살프랜차이즈, 이태원맛집, KBBQ">
+<meta name="author" content="보광정">
+<link rel="canonical" href="https://bogwangjung.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="보광정 — KOREA BBQ BRAND">
+<meta property="og:description" content="3대에 걸친 고기 철학, 보광정 공식 가맹사업 안내 및 무료 창업 상담 신청.">
+<meta property="og:image" content="https://bogwangjung.com/images/bogwangjeong_kakao.webp">
+<meta property="og:url" content="https://bogwangjung.com/">
+
+<!-- 구글 / 네이버 서치콘솔 등록이 필요할 시 아래 주석을 풀고 메타태그 인증 키를 주입하세요 -->
+<!-- <meta name="google-site-verification" content="구글인증키" /> -->
+<!-- <meta name="naver-site-verification" content="네이버인증키" /> -->
+
 <script src="https://unpkg.com/@phosphor-icons/web"></script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- NAV -->
 <nav id="navbar">
   <a href="#top" class="nav-logo">보광정 <span>가맹본부</span></a>
   <button class="mobile-toggle" aria-label="메뉴 열기" onclick="toggleMobileMenu()">
@@ -19,12 +39,13 @@
   <div class="nav-links" id="navLinks">
     <a href="#why" onclick="closeMobileMenu()">경쟁력</a>
     <a href="#story" onclick="closeMobileMenu()">스토리</a>
-    <a href="#founder" onclick="closeMobileMenu()">팀</a>
+    <a href="#founder" onclick="closeMenu()">팀</a>
     <a href="#franchise" onclick="closeMobileMenu()">가맹안내</a>
     <a href="#contact" class="nav-cta" onclick="closeMobileMenu()">창업 상담</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-bg">
     <div class="hero-bg-visual"></div>
@@ -47,6 +68,7 @@
   </div>
 </section>
 
+<!-- NUMBERS -->
 <div class="numbers" id="numbers">
   <div class="num-item">
     <div class="num-val" data-target="4.9" data-decimal="1" data-suffix="★">0★</div>
@@ -66,6 +88,7 @@
   </div>
 </div>
 
+<!-- WHY -->
 <section class="why" id="why">
   <div class="sec-label">Why Bogwangjeong</div>
   <h2 class="sec-h">왜 보광정인가</h2>
@@ -88,6 +111,7 @@
   </div>
 </section>
 
+<!-- STORY -->
 <section class="story" id="story">
   <div class="story-header">
     <div>
@@ -157,6 +181,7 @@
   </div>
 </section>
 
+<!-- FOUNDER -->
 <section class="founder" id="founder">
   <div class="sec-label">Our Team</div>
   <h2 class="sec-h">브랜드를 만드는 사람들</h2>
@@ -206,6 +231,7 @@
   </div>
 </section>
 
+<!-- STATS -->
 <section class="stats-dark" id="stats">
   <div class="sec-label">Performance</div>
   <h2 class="sec-h">숫자로 보는<br>보광정</h2>
@@ -225,47 +251,49 @@
   </div>
 </section>
 
+<!-- MENU -->
 <section class="menu" id="menu">
   <div class="sec-label">Korean BBQ Experience</div>
   <h2 class="sec-h">고기를 가장 맛있게<br>먹는 경험</h2>
   <div class="menu-grid">
     <div class="menu-card">
-      <div class="menu-photo"><div class="ico">🥩</div><div>사진 삽입 예정</div></div>
+      <div class="menu-photo"><img src="images/menu-main.webp" alt="삼겹살 목살"></div>
       <div class="menu-info">
         <div class="menu-num">01</div>
         <div class="menu-name">삼겹살 · 목살</div>
-        <div class="menu-desc">고기를 가장 맛있게 먹을 수 있도록 설계된 보광정의 핵심 메뉴</div>
+        <div class="menu-desc">도드람한돈 브랜드육을 사용하여 고기를 가장 맛있게 먹을 수 있도록 설계된 보광정의 핵심 메뉴</div>
       </div>
     </div>
     <div class="menu-card">
-      <div class="menu-photo"><div class="ico">🔥</div><div>사진 삽입 예정</div></div>
+      <div class="menu-photo"><img src="images/menu-sub.webp" alt="시그니처 소스"></div>
       <div class="menu-info">
         <div class="menu-num">02</div>
-        <div class="menu-name">보광정 불판</div>
-        <div class="menu-desc">고기를 가장 맛있게 구워내기 위해 설계된 보광정만의 불판. 최고의 고기 맛을 구현하기 위한 도구입니다</div>
-        <div class="menu-highlight">디자인 특허 등록</div>
+        <div class="menu-name">시그니처 소스</div>
+        <div class="menu-desc">고기의 맛을 완성하는 보광정만의 소스. 천연 복분자 소금과 특제 고추장 등 특허 출원 중인 브랜드 자산입니다</div>
+        <div class="menu-highlight">Patent Pending</div>
       </div>
     </div>
     <div class="menu-card">
-      <div class="menu-photo"><div class="ico">🥬</div><div>사진 삽입 예정</div></div>
+      <div class="menu-photo"><img src="images/leader1.webp" alt="백김치 곁들임"></div>
       <div class="menu-info">
         <div class="menu-num">03</div>
         <div class="menu-name">백김치 · 곁들임</div>
-        <div class="menu-desc">외국인도 즐기는 보광정만의 페어링. 고기 경험을 완성하는 찬류</div>
+        <div class="menu-desc">외국인도 부담없이 깔끔하게 즐기는 보광정만의 마리아주 페어링 찬류</div>
       </div>
     </div>
     <div class="menu-card">
-      <div class="menu-photo"><div class="ico">🍜</div><div>사진 삽입 예정</div></div>
+      <div class="menu-photo"><img src="images/leader2.webp" alt="비빔칼국수"></div>
       <div class="menu-info">
         <div class="menu-num">04</div>
         <div class="menu-name">순창 조달순 할머니<br>비빔칼국수</div>
-        <div class="menu-desc">오랜 시간 이어진 비법 양념장. 고기와 함께하기 위해 연구된 보광정의 대표 시그니처</div>
+        <div class="menu-desc">오랜 시간 이어진 비법 양념장. K-BBQ 마무리 식사를 완벽하게 보완하기 위해 연구된 대표 시그니처</div>
         <div class="menu-highlight">Signature Menu</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- VISION -->
 <section id="vision">
   <div class="vision">
     <div class="vision-left">
@@ -312,6 +340,7 @@
   </div>
 </section>
 
+<!-- MEDIA -->
 <section class="media" id="media">
   <div class="sec-label">Media</div>
   <h2 class="sec-h">미디어가 주목하는<br>보광정</h2>
@@ -351,6 +380,7 @@
   </div>
 </section>
 
+<!-- FRANCHISE -->
 <section class="franchise" id="franchise">
   <div class="sec-label">Franchise</div>
   <h2 class="sec-h">창업 파트너를<br>모집합니다</h2>
@@ -385,6 +415,7 @@
   </div>
 </section>
 
+<!-- SIMULATOR -->
 <section class="simulator" id="simulator">
   <div class="sec-label">Revenue Simulator</div>
   <h2 class="sec-h">예상 수익<br>계산해보기</h2>
@@ -418,6 +449,7 @@
   </div>
 </section>
 
+<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="sec-label">Contact</div>
   <h2 class="sec-h">문의하기</h2>
@@ -464,6 +496,7 @@
   <div class="ft-biz">대표자: 곽현진 · 사업자등록번호: 390-87-03497 · 서울특별시 용산구 보광로 118 1층</div>
 </footer>
 
+<!-- MODALS -->
 <div class="modal-overlay" id="successModal">
   <div class="modal-card">
     <div class="modal-icon"><i class="ph ph-check-circle"></i></div>
