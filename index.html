@@ -7,24 +7,24 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/@phosphor-icons/web"></script>
-<!-- 외부 스타일시트 연결 -->
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="navbar">
-  <a href="#top" class="nav-logo">보광정</a>
+  <a href="#top" class="nav-logo">보광정 <span>가맹본부</span></a>
+  <button class="mobile-toggle" aria-label="메뉴 열기" onclick="toggleMobileMenu()">
+    <i class="ph ph-list" id="menu-icon"></i>
+  </button>
   <div class="nav-links" id="navLinks">
-    <a href="#why">경쟁력</a>
-    <a href="#story">스토리</a>
-    <a href="#founder">팀</a>
-    <a href="#franchise">가맹안내</a>
-    <a href="#contact" class="nav-cta">창업 상담</a>
+    <a href="#why" onclick="closeMobileMenu()">경쟁력</a>
+    <a href="#story" onclick="closeMobileMenu()">스토리</a>
+    <a href="#founder" onclick="closeMobileMenu()">팀</a>
+    <a href="#franchise" onclick="closeMobileMenu()">가맹안내</a>
+    <a href="#contact" class="nav-cta" onclick="closeMobileMenu()">창업 상담</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-bg">
     <div class="hero-bg-visual"></div>
@@ -41,13 +41,12 @@
     <h1>3대에 걸친 고기 철학,<br>이태원에서 검증된 운영력.<br><em>보광정입니다.</em></h1>
     <p class="hero-sub">한국의 고기 문화를 전하는 브랜드입니다.</p>
     <div class="hero-btns">
-      <a href="#franchise" class="btn-p">창업 상담 신청</a>
+      <a href="#contact" class="btn-p">창업 상담 신청</a>
       <a href="#why" class="btn-g">경쟁력 보기</a>
     </div>
   </div>
 </section>
 
-<!-- NUMBERS -->
 <div class="numbers" id="numbers">
   <div class="num-item">
     <div class="num-val" data-target="4.9" data-decimal="1" data-suffix="★">0★</div>
@@ -67,7 +66,6 @@
   </div>
 </div>
 
-<!-- WHY -->
 <section class="why" id="why">
   <div class="sec-label">Why Bogwangjeong</div>
   <h2 class="sec-h">왜 보광정인가</h2>
@@ -90,14 +88,13 @@
   </div>
 </section>
 
-<!-- STORY -->
 <section class="story" id="story">
   <div class="story-header">
     <div>
       <div class="sec-label">Brand Story</div>
       <h2 class="sec-h">3대에 걸쳐<br>쌓아온 경험</h2>
     </div>
-    <p class="story-header-desc">
+    <p class="story-intro">
       보광정은 어느 날 갑자기 만들어진 브랜드가 아닙니다.<br>
       수많은 시행착오와 3대에 걸친 현장 경험이<br>
       지금의 경쟁력이 됐습니다.
@@ -160,12 +157,11 @@
   </div>
 </section>
 
-<!-- FOUNDER (요청하신 사진 무드 및 일렬 배치 적용) -->
 <section class="founder" id="founder">
   <div class="sec-label">Our Team</div>
   <h2 class="sec-h">브랜드를 만드는 사람들</h2>
+  <p class="founder-intro-text">보광정은 한 사람이 만든 브랜드가 아닙니다.<br>세 명의 공동창업자가 각자의 전문성을 모아 함께 설계한 브랜드입니다.</p>
   <div class="founder-team">
-    <!-- 이동훈 대표 -->
     <div class="founder-card">
       <div class="founder-card-img-wrapper">
         <img src="images/lee_donghoon.webp" alt="이동훈" class="founder-card-img">
@@ -181,7 +177,6 @@
         </div>
       </div>
     </div>
-    <!-- 곽범조 이사 -->
     <div class="founder-card">
       <div class="founder-card-img-wrapper">
         <img src="images/kwak_beomjo.webp" alt="곽범조" class="founder-card-img">
@@ -195,7 +190,6 @@
         </div>
       </div>
     </div>
-    <!-- 박세현 이사 -->
     <div class="founder-card">
       <div class="founder-card-img-wrapper">
         <img src="images/park_sehyun.webp" alt="박세현" class="founder-card-img">
@@ -212,7 +206,6 @@
   </div>
 </section>
 
-<!-- STATS -->
 <section class="stats-dark" id="stats">
   <div class="sec-label">Performance</div>
   <h2 class="sec-h">숫자로 보는<br>보광정</h2>
@@ -232,13 +225,12 @@
   </div>
 </section>
 
-<!-- MENU -->
 <section class="menu" id="menu">
   <div class="sec-label">Korean BBQ Experience</div>
   <h2 class="sec-h">고기를 가장 맛있게<br>먹는 경험</h2>
   <div class="menu-grid">
     <div class="menu-card">
-      <div class="menu-photo"><img src="images/menu-main.webp" alt="삼겹살 목살"></div>
+      <div class="menu-photo"><div class="ico">🥩</div><div>사진 삽입 예정</div></div>
       <div class="menu-info">
         <div class="menu-num">01</div>
         <div class="menu-name">삼겹살 · 목살</div>
@@ -246,7 +238,7 @@
       </div>
     </div>
     <div class="menu-card">
-      <div class="menu-photo"><img src="images/menu-sub.webp" alt="시그니처 소스"></div>
+      <div class="menu-photo"><div class="ico">🔥</div><div>사진 삽입 예정</div></div>
       <div class="menu-info">
         <div class="menu-num">02</div>
         <div class="menu-name">보광정 불판</div>
@@ -255,15 +247,15 @@
       </div>
     </div>
     <div class="menu-card">
-      <div class="menu-photo"><img src="images/leader1.webp" alt="백김치 곁들임"></div>
+      <div class="menu-photo"><div class="ico">🥬</div><div>사진 삽입 예정</div></div>
       <div class="menu-info">
         <div class="menu-num">03</div>
         <div class="menu-name">백김치 · 곁들임</div>
-        <div class="menu-desc">외국인도 부담없이 깔끔하게 즐기는 보광정만의 마리아주 페어링 찬류</div>
+        <div class="menu-desc">외국인도 즐기는 보광정만의 페어링. 고기 경험을 완성하는 찬류</div>
       </div>
     </div>
     <div class="menu-card">
-      <div class="menu-photo"><img src="images/leader2.webp" alt="비빔칼국수"></div>
+      <div class="menu-photo"><div class="ico">🍜</div><div>사진 삽입 예정</div></div>
       <div class="menu-info">
         <div class="menu-num">04</div>
         <div class="menu-name">순창 조달순 할머니<br>비빔칼국수</div>
@@ -274,7 +266,6 @@
   </div>
 </section>
 
-<!-- VISION -->
 <section id="vision">
   <div class="vision">
     <div class="vision-left">
@@ -321,7 +312,6 @@
   </div>
 </section>
 
-<!-- MEDIA [순정 마크업 구조 고정 보존] -->
 <section class="media" id="media">
   <div class="sec-label">Media</div>
   <h2 class="sec-h">미디어가 주목하는<br>보광정</h2>
@@ -361,7 +351,6 @@
   </div>
 </section>
 
-<!-- FRANCHISE -->
 <section class="franchise" id="franchise">
   <div class="sec-label">Franchise</div>
   <h2 class="sec-h">창업 파트너를<br>모집합니다</h2>
@@ -387,9 +376,8 @@
       <div class="p-desc">공간 맞춤 브랜딩 시공 · 도제식 교육 · 오픈 올인원 케어</div>
     </div>
   </div>
-
   <div class="franchise-cta">
-    <div>
+    <div class="fct-text-box">
       <div class="fct-title">지금 가맹 상담을 신청하세요</div>
       <div class="fct-sub">최신 가맹운영 가이드 및 수익성 분석 리포트 PDF 무료 제공</div>
     </div>
@@ -397,7 +385,6 @@
   </div>
 </section>
 
-<!-- SIMULATOR -->
 <section class="simulator" id="simulator">
   <div class="sec-label">Revenue Simulator</div>
   <h2 class="sec-h">예상 수익<br>계산해보기</h2>
@@ -431,7 +418,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="sec-label">Contact</div>
   <h2 class="sec-h">문의하기</h2>
@@ -440,50 +426,31 @@
       <form id="franchiseForm" action="https://formspree.io/f/xykawkzv" method="POST" onsubmit="handleFormSubmit(event)">
         <div class="form-stack">
           <div class="form-row2">
-            <div class="ff">
-              <div class="ff-lbl">이름 / 담당자명 *</div>
-              <input class="ff-inp" type="text" name="이름 / 담당자명" id="form-name" placeholder="홍길동" required>
-            </div>
-            <div class="ff">
-              <div class="ff-lbl">휴대폰 연락처 *</div>
-              <input class="ff-inp" type="tel" name="휴대폰 연락처" id="form-tel" placeholder="010-0000-0000" required>
-            </div>
+            <div class="ff"><div class="ff-lbl">이름</div><input class="ff-inp" type="text" id="form-name" placeholder="홍길동" required></div>
+            <div class="ff"><div class="ff-lbl">연락처</div><input class="ff-inp" type="tel" id="form-tel" placeholder="010-0000-0000" required></div>
           </div>
           <div class="form-row2">
-            <div class="ff">
-              <div class="ff-lbl">희망 창업 예정 지역 *</div>
-              <input class="ff-inp" type="text" name="희망 창업 예정 지역" id="form-area" placeholder="서울 강남구" required>
-            </div>
-            <div class="ff">
-              <div class="ff-lbl">예상 예산 규모 *</div>
-              <input class="ff-inp" type="text" name="예상 예산 규모" id="form-budget" placeholder="1억 ~ 2억" required>
-            </div>
+            <div class="ff"><div class="ff-lbl">희망 지역</div><input class="ff-inp" type="text" placeholder="서울 강남구" required></div>
+            <div class="ff"><div class="ff-lbl">투자 가능 금액</div><input class="ff-inp" type="text" placeholder="1억 ~ 2억" required></div>
           </div>
-          <div class="ff full">
-            <div class="ff-lbl">문의 유형 *</div>
-            <input class="ff-inp" type="text" name="문의 카테고리" id="form-type" placeholder="가맹 창업 / 투자 / 제휴 협업 중 입력" required>
-          </div>
-          <div class="ff full">
-            <div class="ff-lbl">문의 내용</div>
-            <input class="ff-inp" type="text" name="추가 상세 전달 사항" id="form-msg" placeholder="궁금한 점 및 점포 유무를 자유롭게 적어주세요">
-          </div>
+          <div class="ff full"><div class="ff-lbl">문의 유형</div><input class="ff-inp" type="text" placeholder="가맹 / 투자 / 협업 / 채용" required></div>
+          <div class="ff full"><div class="ff-lbl">문의 내용</div><input class="ff-inp" type="text" placeholder="궁금한 점을 자유롭게 적어주세요"></div>
         </div>
         <button type="submit" class="btn-submit">문의 보내기</button>
       </form>
     </div>
     <div class="contact-info">
       <div><div class="ci-lbl">이메일</div><div class="ci-val">bogwangjung77@gmail.com</div></div>
-      <div><div class="ci-lbl">주소</div><div class="ci-val">서울특별시 용산구 보광로 118 1층 보광정</div></div>
+      <div><div class="ci-lbl">주소</div><div class="ci-val">서울특별시 용산구 보광로 118 1층</div></div>
       <div><div class="ci-lbl">인스타그램</div><div class="ci-val"><a href="https://instagram.com/bogwangjung_official" target="_blank">@bogwangjung_official</a></div></div>
       <div>
-        <div class="ci-lbl">카카오톡 채널</div>
-        <a href="https://pf.kakao.com/_PfRxeG" target="_blank" class="kakao-btn"><i class="ph ph-chats-teardrop"></i> 카카오톡으로 문의하기</a>
+        <div class="ci-lbl">카카오톡</div>
+        <a href="https://pf.kakao.com/_PfRxeG" target="_blank" class="kakao-btn">카카오톡으로 문의하기</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="ft-logo">보광정</div>
@@ -497,7 +464,6 @@
   <div class="ft-biz">대표자: 곽현진 · 사업자등록번호: 390-87-03497 · 서울특별시 용산구 보광로 118 1층</div>
 </footer>
 
-<!-- MODALS -->
 <div class="modal-overlay" id="successModal">
   <div class="modal-card">
     <div class="modal-icon"><i class="ph ph-check-circle"></i></div>
@@ -524,7 +490,6 @@
   </div>
 </div>
 
-<!-- 외부 스크립트 연결 -->
 <script src="js/script.js"></script>
 </body>
 </html>
