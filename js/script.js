@@ -1,8 +1,3 @@
-/**
- * 보광정 브랜드 페이지 비즈니스 로직 및 애니메이션 디렉터
- */
-
-// 1. 네비게이션 스크롤 색상 스위처
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('navbar');
   if (nav) {
@@ -14,7 +9,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// 2. 모바일 반응형 드롭다운 메뉴 여닫이 컨트롤러
 function toggleMobileMenu() {
   const links = document.getElementById('navLinks');
   const icon = document.getElementById('menu-icon');
@@ -37,7 +31,6 @@ function closeMobileMenu() {
   }
 }
 
-// 3. 가맹 순수익 시뮬레이터 알고리즘 엔진
 function calculateROI() {
   const sizeInput = document.getElementById('sim-size');
   const sizeDisplay = document.getElementById('range-val');
@@ -68,7 +61,6 @@ function calculateROI() {
   document.getElementById('res-net').innerText = `${formatMoney(nLow)} ~ ${formatMoney(nHigh)} (순수익률 28~30%)`;
 }
 
-// 4. 지능형 카운트 업 엔진
 function countUp(el, target, duration, decimal, suffix) {
   const step = target / (duration / 16);
   let current = 0;
@@ -100,7 +92,6 @@ const initCountUpObserver = () => {
   numEls.forEach(el => observer.observe(el));
 };
 
-// 5. 모달 및 폼 제출 핸들링
 function openVideoModal() {
   const targetModal = document.getElementById('videoModal');
   if (targetModal) targetModal.classList.add('active');

@@ -7,9 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
 
-<!-- ──────────────────────────────────────────────────
-   [SEO] 검색엔진 최적화 및 링크 공유 오픈그래프(OG) 메타 태그
-   ────────────────────────────────────────────────── */ -->
+<!-- [SEO] 검색엔진 최적화 및 링크 공유 오픈그래프(OG) 메타 태그 -->
 <meta name="description" content="3대에 걸친 고기 철학, 이태원에서 검증된 프리미엄 KOREA BBQ BRAND 보광정">
 <meta name="keywords" content="보광정, 보광정창업, 고기집창업, 삼겹살프랜차이즈, 이태원맛집, KBBQ">
 <meta name="author" content="보광정">
@@ -20,10 +18,6 @@
 <meta property="og:description" content="3대에 걸친 고기 철학, 보광정 공식 가맹사업 안내 및 무료 창업 상담 신청.">
 <meta property="og:image" content="https://bogwangjung.com/images/bogwangjeong_kakao.webp">
 <meta property="og:url" content="https://bogwangjung.com/">
-
-<!-- 구글 / 네이버 서치콘솔 등록이 필요할 시 아래 주석을 풀고 메타태그 인증 키를 주입하세요 -->
-<!-- <meta name="google-site-verification" content="구글인증키" /> -->
-<!-- <meta name="naver-site-verification" content="네이버인증키" /> -->
 
 <script src="https://unpkg.com/@phosphor-icons/web"></script>
 <link rel="stylesheet" href="css/style.css">
@@ -39,7 +33,7 @@
   <div class="nav-links" id="navLinks">
     <a href="#why" onclick="closeMobileMenu()">경쟁력</a>
     <a href="#story" onclick="closeMobileMenu()">스토리</a>
-    <a href="#founder" onclick="closeMenu()">팀</a>
+    <a href="#founder" onclick="closeMobileMenu()">팀</a>
     <a href="#franchise" onclick="closeMobileMenu()">가맹안내</a>
     <a href="#contact" class="nav-cta" onclick="closeMobileMenu()">창업 상담</a>
   </div>
@@ -50,6 +44,7 @@
   <div class="hero-bg">
     <div class="hero-bg-visual"></div>
     <div class="hero-smoke-emitter"></div>
+    <div class="hero-video-placeholder" onclick="openVideoModal()">
     </div>
   </div>
   <div class="hero-overlay"></div>
@@ -88,18 +83,20 @@
 <section class="why" id="why">
   <div class="sec-label">Why Bogwangjeong</div>
   <h2 class="sec-h">왜 보광정인가</h2>
-  <div class="why-grid">
-    <div class="why-card">
+
+  <div class="mobile-swipe-hint"><i class="ph ph-arrows-left-right"></i> 좌우로 넘겨보세요</div>
+  <div class="why-grid mobile-swipe">
+    <div class="why-card swipe-item">
       <div class="why-num">01</div>
       <div class="why-title">이태원에서<br>검증된 경쟁력</div>
       <div class="why-desc">외국인 관광 상권, 구글 4.9★ · 3,100개 리뷰.<br>가장 까다로운 시장이 먼저 증명했습니다.</div>
     </div>
-    <div class="why-card">
+    <div class="why-card swipe-item">
       <div class="why-num">02</div>
       <div class="why-title">상표권 등록 완료<br>브랜드 자산</div>
       <div class="why-desc">보광정 상표권 기반의 확장 가능한 브랜드.<br>축적된 운영 노하우와 브랜드 자산을 함께 활용합니다.</div>
     </div>
-    <div class="why-card">
+    <div class="why-card swipe-item">
       <div class="why-num">03</div>
       <div class="why-title">누구나 운영할 수 있는<br>완성된 시스템</div>
       <div class="why-desc">주방·홀·교육·위생 전 분야 매뉴얼.<br>외식 경험 없이도 본사 지원으로 오픈 가능합니다.</div>
@@ -121,43 +118,44 @@
     </p>
   </div>
 
-  <div class="story-steps">
-    <div class="step-card">
+  <div class="mobile-swipe-hint"><i class="ph ph-arrows-left-right"></i> 좌우로 넘겨보세요</div>
+  <div class="story-steps mobile-swipe">
+    <div class="step-card swipe-item">
       <div class="step-arrow">→</div>
       <div class="step-num">01</div>
       <div class="step-tag">1세대 · 경남 산청</div>
       <div class="step-title">농장에서 시작된 고기 이해</div>
       <div class="step-desc">지리산 산청 돼지농장. 좋은 고기가 어떻게 만들어지는지, 그 기준이 이때 형성됐습니다.</div>
     </div>
-    <div class="step-card">
+    <div class="step-card swipe-item">
       <div class="step-arrow">→</div>
       <div class="step-num">02</div>
       <div class="step-tag">2세대 · 대구 수성구</div>
       <div class="step-title">고깃집 운영의 현장 경험</div>
       <div class="step-desc">부모님의 고깃집. 맛을 내는 법, 단골을 만드는 법, 외식업의 본질을 몸으로 배웠습니다.</div>
     </div>
-    <div class="step-card">
+    <div class="step-card swipe-item">
       <div class="step-arrow">→</div>
       <div class="step-num">03</div>
       <div class="step-tag">3세대 · 전국</div>
       <div class="step-title">수백 곳 탐방 · 메뉴 연구</div>
       <div class="step-desc">전국 고깃집 직접 탐방, 궁중음식연구원 수료, 한식 다이닝 경험. 무엇이 통하는지 철저히 검증했습니다.</div>
     </div>
-    <div class="step-card dark">
+    <div class="step-card dark swipe-item">
       <div class="step-arrow">→</div>
       <div class="step-num">04</div>
       <div class="step-tag">브랜드 설계</div>
       <div class="step-title">고기 경험 전체를 설계</div>
       <div class="step-desc">고기·소스·곁들임·마무리까지 하나의 경험으로. 3대의 시행착오가 메뉴 철학으로 완성됐습니다.</div>
     </div>
-    <div class="step-card dark">
+    <div class="step-card dark swipe-item">
       <div class="step-arrow">→</div>
       <div class="step-num">05</div>
       <div class="step-tag">이태원 검증</div>
       <div class="step-title">가장 까다로운 상권에서 증명</div>
       <div class="step-desc">외국인 40%, 구글 4.9★ · 3,100개 리뷰. 이태원에서 살아남은 것 자체가 검증입니다.</div>
     </div>
-    <div class="step-card dark">
+    <div class="step-card dark swipe-item">
       <div class="step-num">06</div>
       <div class="step-tag">현재</div>
       <div class="step-title">경험이 시스템이 됐습니다</div>
@@ -182,8 +180,10 @@
   <div class="sec-label">Our Team</div>
   <h2 class="sec-h">브랜드를 만드는 사람들</h2>
   <p class="founder-intro-text">보광정은 한 사람이 만든 브랜드가 아닙니다.<br>세 명의 공동창업자가 각자의 전문성을 모아 함께 설계한 브랜드입니다.</p>
-  <div class="founder-team">
-    <div class="founder-card">
+
+  <div class="mobile-swipe-hint"><i class="ph ph-arrows-left-right"></i> 좌우로 넘겨보세요</div>
+  <div class="founder-team mobile-swipe">
+    <div class="founder-card swipe-item">
       <div class="founder-card-img-wrapper">
         <img src="images/lee_donghoon.webp" alt="이동훈" class="founder-card-img">
       </div>
@@ -198,7 +198,7 @@
         </div>
       </div>
     </div>
-    <div class="founder-card">
+    <div class="founder-card swipe-item">
       <div class="founder-card-img-wrapper">
         <img src="images/kwak_beomjo.webp" alt="곽범조" class="founder-card-img">
       </div>
@@ -211,7 +211,7 @@
         </div>
       </div>
     </div>
-    <div class="founder-card">
+    <div class="founder-card swipe-item">
       <div class="founder-card-img-wrapper">
         <img src="images/park_sehyun.webp" alt="박세현" class="founder-card-img">
       </div>
@@ -231,16 +231,18 @@
 <section class="stats-dark" id="stats">
   <div class="sec-label">Performance</div>
   <h2 class="sec-h">숫자로 보는<br>보광정</h2>
-  <div class="stats-grid">
-    <div class="stat-card">
+
+  <div class="mobile-swipe-hint"><i class="ph ph-arrows-left-right"></i> 좌우로 넘겨보세요</div>
+  <div class="stats-grid mobile-swipe">
+    <div class="stat-card swipe-item">
       <div class="stat-val">10억+</div>
       <div class="stat-lbl">연 매출 (직영점)</div>
     </div>
-    <div class="stat-card">
+    <div class="stat-card swipe-item">
       <div class="stat-val">30%</div>
       <div class="stat-lbl">평균 순수익률</div>
     </div>
-    <div class="stat-card">
+    <div class="stat-card swipe-item">
       <div class="stat-val">95%+</div>
       <div class="stat-lbl">행사 만족도</div>
     </div>
@@ -251,8 +253,10 @@
 <section class="menu" id="menu">
   <div class="sec-label">Korean BBQ Experience</div>
   <h2 class="sec-h">고기를 가장 맛있게<br>먹는 경험</h2>
-  <div class="menu-grid">
-    <div class="menu-card">
+
+  <div class="mobile-swipe-hint"><i class="ph ph-arrows-left-right"></i> 좌우로 넘겨보세요</div>
+  <div class="menu-grid mobile-swipe">
+    <div class="menu-card swipe-item">
       <div class="menu-photo"><img src="images/menu-main.webp" alt="삼겹살 목살"></div>
       <div class="menu-info">
         <div class="menu-num">01</div>
@@ -260,7 +264,7 @@
         <div class="menu-desc">도드람한돈 브랜드육을 사용하여 고기를 가장 맛있게 먹을 수 있도록 설계된 보광정의 핵심 메뉴</div>
       </div>
     </div>
-    <div class="menu-card">
+    <div class="menu-card swipe-item">
       <div class="menu-photo"><img src="images/menu-sub.webp" alt="시그니처 소스"></div>
       <div class="menu-info">
         <div class="menu-num">02</div>
@@ -269,15 +273,15 @@
         <div class="menu-highlight">Patent Pending</div>
       </div>
     </div>
-    <div class="menu-card">
+    <div class="menu-card swipe-item">
       <div class="menu-photo"><img src="images/leader1.webp" alt="백김치 곁들임"></div>
       <div class="menu-info">
         <div class="menu-num">03</div>
         <div class="menu-name">백김치 · 곁들임</div>
-        <div class="menu-desc">외국인도 부담없이 깔끔하게 즐기는 보광정만의 마리아주 페어링 찬류</div>
+        <div class="menu-desc">외국인도 즐기는 보광정만의 페어링. 고기 경험을 완성하는 찬류</div>
       </div>
     </div>
-    <div class="menu-card">
+    <div class="menu-card swipe-item">
       <div class="menu-photo"><img src="images/leader2.webp" alt="비빔칼국수"></div>
       <div class="menu-info">
         <div class="menu-num">04</div>
@@ -340,22 +344,24 @@
 <section class="media" id="media">
   <div class="sec-label">Media</div>
   <h2 class="sec-h">미디어가 주목하는<br>보광정</h2>
-  <div class="media-grid">
-    <div class="media-card">
+
+  <div class="mobile-swipe-hint"><i class="ph ph-arrows-left-right"></i> 좌우로 넘겨보세요</div>
+  <div class="media-grid mobile-swipe">
+    <div class="media-card swipe-item">
       <div class="media-thumb"><div class="m-ico">📺</div><div>OTT</div></div>
       <div class="media-info">
         <div class="media-type">OTT 콘텐츠</div>
         <div class="media-title">넷플릭스 오리지널<br>이태원 씬 촬영지 출연</div>
       </div>
     </div>
-    <div class="media-card">
+    <div class="media-card swipe-item">
       <div class="media-thumb"><div class="m-ico">📺</div><div>방송</div></div>
       <div class="media-info">
         <div class="media-type">tvN 예능 프로그램</div>
         <div class="media-title">'밥이나 한잔해'<br>보광정 방문 에피소드 방영</div>
       </div>
     </div>
-    <a href="https://youtu.be/O_AfnrUhQDw?si=bDbujya_KdH5AbTJ" target="_blank">
+    <a href="https://youtu.be/O_AfnrUhQDw?si=bDbujya_KdH5AbTJ" target="_blank" class="swipe-item" style="text-decoration:none;">
       <div class="media-card">
         <div class="media-thumb"><div class="m-ico">▶</div><div>YouTube</div></div>
         <div class="media-info">
@@ -364,7 +370,7 @@
         </div>
       </div>
     </a>
-    <a href="https://youtu.be/24G3PMx12q0?si=BsgB7vkCb7Nm0dWw" target="_blank">
+    <a href="https://youtu.be/24G3PMx12q0?si=BsgB7vkCb7Nm0dWw" target="_blank" class="swipe-item" style="text-decoration:none;">
       <div class="media-card">
         <div class="media-thumb"><div class="m-ico">▶</div><div>YouTube</div></div>
         <div class="media-info">
@@ -380,23 +386,25 @@
 <section class="franchise" id="franchise">
   <div class="sec-label">Franchise</div>
   <h2 class="sec-h">창업 파트너를<br>모집합니다</h2>
-  <div class="process-grid">
-    <div class="p-card">
+
+  <div class="mobile-swipe-hint"><i class="ph ph-arrows-left-right"></i> 좌우로 넘겨보세요</div>
+  <div class="process-grid mobile-swipe">
+    <div class="p-card swipe-item">
       <div class="p-num">01</div>
       <div class="p-title">상담 신청</div>
       <div class="p-desc">폼 서브밋 또는 하단 카카오 공식 채널을 통한 손쉬운 신청</div>
     </div>
-    <div class="p-card">
+    <div class="p-card swipe-item">
       <div class="p-num">02</div>
-      <div class="p-title">창업 설명회</div>
+      <div class="p-title">brand 설명회</div>
       <div class="p-desc">운영 아카데미 시스템 · 정밀 실수익 구조 안내 브리핑</div>
     </div>
-    <div class="p-card">
+    <div class="p-card swipe-item">
       <div class="p-num">03</div>
       <div class="p-title">입지 분석</div>
       <div class="p-desc">지리정보시스템 결합 본사 무료 상권 및 후보지 분석 제공</div>
     </div>
-    <div class="p-card">
+    <div class="p-card swipe-item">
       <div class="p-num">04</div>
       <div class="p-title">계약 · 오픈</div>
       <div class="p-desc">공간 맞춤 브랜딩 시공 · 도제식 교육 · 오픈 올인원 케어</div>
@@ -454,26 +462,44 @@
       <form id="franchiseForm" action="https://formspree.io/f/xykawkzv" method="POST" onsubmit="handleFormSubmit(event)">
         <div class="form-stack">
           <div class="form-row2">
-            <div class="ff"><div class="ff-lbl">이름</div><input class="ff-inp" type="text" id="form-name" placeholder="홍길동" required></div>
-            <div class="ff"><div class="ff-lbl">연락처</div><input class="ff-inp" type="tel" id="form-tel" placeholder="010-0000-0000" required></div>
+            <div class="ff">
+              <div class="ff-lbl">이름 / 담당자명 *</div>
+              <input class="ff-inp" type="text" name="이름 / 담당자명" id="form-name" placeholder="홍길동" required>
+            </div>
+            <div class="ff">
+              <div class="ff-lbl">휴대폰 연락처 *</div>
+              <input class="ff-inp" type="tel" name="휴대폰 연락처" id="form-tel" placeholder="010-0000-0000" required>
+            </div>
           </div>
           <div class="form-row2">
-            <div class="ff"><div class="ff-lbl">희망 지역</div><input class="ff-inp" type="text" placeholder="서울 강남구" required></div>
-            <div class="ff"><div class="ff-lbl">투자 가능 금액</div><input class="ff-inp" type="text" placeholder="1억 ~ 2억" required></div>
+            <div class="ff">
+              <div class="ff-lbl">희망 창업 예정 지역 *</div>
+              <input class="ff-inp" type="text" name="희망 창업 예정 지역" id="form-area" placeholder="서울 강남구" required>
+            </div>
+            <div class="ff">
+              <div class="ff-lbl">예상 예산 규모 *</div>
+              <input class="ff-inp" type="text" name="예상 예산 규모" id="form-budget" placeholder="1억 ~ 2억" required>
+            </div>
           </div>
-          <div class="ff full"><div class="ff-lbl">문의 유형</div><input class="ff-inp" type="text" placeholder="가맹 / 투자 / 협업 / 채용" required></div>
-          <div class="ff full"><div class="ff-lbl">문의 내용</div><input class="ff-inp" type="text" placeholder="궁금한 점을 자유롭게 적어주세요"></div>
+          <div class="ff full">
+            <div class="ff-lbl">문의 유형 *</div>
+            <input class="ff-inp" type="text" name="문의 카테고리" id="form-type" placeholder="가맹 창업 / 투자 / 제휴 협업 중 입력" required>
+          </div>
+          <div class="ff full">
+            <div class="ff-lbl">문의 내용</div>
+            <input class="ff-inp" type="text" name="추가 상세 전달 사항" id="form-msg" placeholder="궁금한 점 및 점포 유무를 자유롭게 적어주세요">
+          </div>
         </div>
         <button type="submit" class="btn-submit">문의 보내기</button>
       </form>
     </div>
     <div class="contact-info">
       <div><div class="ci-lbl">이메일</div><div class="ci-val">bogwangjung77@gmail.com</div></div>
-      <div><div class="ci-lbl">주소</div><div class="ci-val">서울특별시 용산구 보광로 118 1층</div></div>
+      <div><div class="ci-lbl">주소</div><div class="ci-val">서울특별시 용산구 보광로 118 1층 보광정</div></div>
       <div><div class="ci-lbl">인스타그램</div><div class="ci-val"><a href="https://instagram.com/bogwangjung_official" target="_blank">@bogwangjung_official</a></div></div>
       <div>
-        <div class="ci-lbl">카카오톡</div>
-        <a href="https://pf.kakao.com/_PfRxeG" target="_blank" class="kakao-btn">카카오톡으로 문의하기</a>
+        <div class="ci-lbl">카카오톡 채널</div>
+        <a href="https://pf.kakao.com/_PfRxeG" target="_blank" class="kakao-btn"><i class="ph ph-chats-teardrop"></i> 카카오톡으로 문의하기</a>
       </div>
     </div>
   </div>
